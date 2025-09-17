@@ -95,12 +95,6 @@ TARGET_VALUE, BLACK_VAL, WHITE_VAL = calibrate()
 # タイマー開始（レベル3で追加：走行時間測定）
 timer = StopWatch()
 
-print("ロボットをラインに置いて中央ボタンを押してください")
-
-# スタート待機
-while not Button.CENTER in hub.buttons.pressed():
-    wait(10)
-
 print("スタート！（中央ボタンで停止）")
 print("比例制御でスムーズに走行します")
 hub.speaker.beep(1000, 100)
