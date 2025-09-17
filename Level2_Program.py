@@ -71,12 +71,7 @@ print("=== レベル2: キャリブレーション付きライントレース ==
 # キャリブレーション実行（レベル2の新機能）
 THRESHOLD, BLACK_VAL, WHITE_VAL = calibrate()
 
-print("ロボットをラインに置いて中央ボタンを押してください")
-
 # スタート待機
-while not Button.CENTER in hub.buttons.pressed():
-    wait(10)
-
 print("スタート！（中央ボタンで停止）")
 hub.speaker.beep(1000, 100)
 
