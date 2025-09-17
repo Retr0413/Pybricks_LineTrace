@@ -27,12 +27,8 @@ BASE_SPEED = 150    # 基本速度
 TURN_RATE = 100     # 旋回速度
 
 print("=== レベル1: 基本ライントレース ===")
-print("ロボットをラインに置いて中央ボタンを押してください")
 
 # スタート待機
-while not Button.CENTER in hub.buttons.pressed():
-    wait(10)
-
 print("スタート！（中央ボタンで停止）")
 hub.speaker.beep(1000, 100)
 
