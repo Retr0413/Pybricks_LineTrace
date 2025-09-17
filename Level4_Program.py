@@ -177,12 +177,6 @@ TARGET_VALUE, BLACK_THRESHOLD, WHITE_THRESHOLD = calibrate()
 timer = StopWatch()
 lost_line_count = 0  # ライン見失いカウンター（レベル4で追加）
 
-print("ロボットをラインに置いて中央ボタンを押してください")
-
-# スタート待機
-while not Button.CENTER in hub.buttons.pressed():
-    wait(10)
-
 print("スタート！（中央ボタンで停止）")
 print("PID制御で最高のパフォーマンスを発揮します")
 hub.speaker.beep(1000, 100)
